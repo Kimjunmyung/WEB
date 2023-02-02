@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            background-color: azure;
+        }
+        li{
+            list-style: none; /*리스트 스타일 없애는*/
+            float: left; /*왼쪽부터 정렬하기*/
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+       
+        #center{
+            background-color: bisque;
+            padding: 30px;
+            width: 800px;
+            height:300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+       
+        li:nth-child(2n){
+            background-color: aquamarine;
+        }
+        
+        li:nth-child(2n+1){
+            background-color:darksalmon
+        }
+        
+        a{
+            text-decoration: none;
+        }
+
+        a:hover{
+            background-color: blue;
+        }
+       
+        div{
+            font-size: 15px;
+            font-weight : bold;
+            color:brown
+        }
+        #top{
+           
+            width: 800px;
+            height:100px;
+            background-color: cadetblue;
+            padding: 3px;
+        }
+        #top2{
+            width: 250px;
+            height: 100px;
+            background-color: blueviolet;
+            padding: 2px;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="total">
+        <div id="top">
+            <ul>
+                <li>
+                     <a href="">회원가입</a>
+                </li>
+        
+                <li>
+                     <a href="page20.html">제품정보</a>
+                </li>
+        
+                <li>
+                    <a href="page30.html">게시판</a>
+                </li>
+        
+                <li>
+                     <a href="">장바구니</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="top2">
+            장바구니(고정)
+        </div>
+
+        <div id="center">
+            <table border="1">
+                <tr>
+                    <td bgcolor="green">항목</td>
+                    <td bgcolor="green">입력</td>
+                </tr>
+                <tr>
+                    <td width="100" height="30">번호</td>
+                    <td><input type="text" style="background-color: pink;"></td>
+                </tr>   
+                <tr>
+                    <td>제목</td>
+                    <td ><input type="text"style="background-color: pink;"></td>
+                </tr>
+                
+                <tr>
+                    <td>작성자</td>
+                    <td ><input type="text"style="background-color: pink;"></td>
+                    <tr align="center">
+                        <td  width="100">내용</td>
+                        <td  width="300"><textarea style = "background-color: pink;" 
+                            cols="30" rows="10"></textarea> </td>
+                   </tr>
+                    <td colspan="2"><button>글쓰기 완료</button></td>
+                </tr>           
+            </table>
+        </div>
+    </div>
+</body>
+</html>

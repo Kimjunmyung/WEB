@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        function hi(){
+            alert("안녕하세요")
+        }
+
+        function bye(){
+            alert("안녕히 가세요")
+        }
+    </script> -->
+
+    <script>
+        function check() {
+            id1 = "root"
+            pw1 = "1234"
+           id2 =  document.getElementById('id2').value // 밑에 있는 id2에서 value값만 가져온다.
+           id1 =  document.getElementById('pw2').value 
+
+             result = document.getElementById('result')
+            
+            if(id1 == id2 && pw1 == pw2){
+                result.innerHTML = "<font color=blue>로그인 성공!!</font>"
+            }else{
+                result.innerHTML = "<font color=red>로그인 실패!!</font>"
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- <button onclick="hi()">인사처리</button>
+    <button onclick="bye()">안녕처리</button> -->
+    <hr color="red">
+    아이디:<input type="text" id = "id2" value="root"><br>
+    패스워드:<input type="text" id = "pw2" value="1234"><br>
+    <button onclick="check()">로그인</button>
+    <div id = "result">
+        결과 들어갈 곳
+    </div>
+</body>
+</html>

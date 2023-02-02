@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            background-color: azure;
+        }
+        li{
+            list-style: none; /*리스트 스타일 없애는*/
+            float: left; /*왼쪽부터 정렬하기*/
+            padding: 10px;
+            width: 90px;
+            height: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+       
+        #center{
+            align-items: center;
+            background-color: bisque;
+            height:300px;
+        }
+       
+        li:nth-child(2n){
+            background-color: aquamarine;
+        }
+        
+        li:nth-child(2n+1){
+            background-color:darksalmon
+        }
+        
+        a{
+            text-decoration: none;
+        }
+
+        a:hover{
+            background-color: gray;
+        }
+       
+        div{
+            font-size: 15px;
+            font-weight : bold;
+            color:brown
+        }
+        #top{
+            height:100px;
+            background-color: cadetblue;
+            padding: 3px;
+        }
+        #top2{
+            width: 250px;
+            height: 100px;
+            background-color: blueviolet;
+            padding: 2px;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="total">
+        <div id="top">
+            <ul>
+                <li>
+                     <a href="">회원가입</a>
+                </li>
+        
+                <li>
+                     <a href="page20.html">제품정보</a>
+                </li>
+        
+                <li>
+                     <a href="page30.html">게시판</a>
+                </li>
+        
+                <li>
+                     <a href="">장바구니</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="top2">
+            장바구니(고정)
+        </div>
+
+        <div id="center">
+            <form action="">
+                <h3>검색할 단어를 입력하세요</h3>
+                <hr>
+                검 색<input type="text"> <button>검색 시작</button>
+                <hr color="red">
+              
+            </form>
+            <form action="">
+                <h3>로그인 </h3>
+            <table>
+                <tr>
+                    <td>아이디</td>
+                    <td><input type="text"></td> 
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="password"></td> 
+                </tr>
+                <td colspan="2" align="center"><button>로그인</button></td>
+            </table>
+            <hr color="red">
+            </form>
+
+            <form action="">
+              
+                <h3>회원가입</h3>
+                <table>
+                    <tr>
+                        <td>아이디</td>
+                        <td><input type="text"></td> 
+                    </tr>
+                    <tr>
+                        <td>비밀번호</td>
+                        <td><input type="password"></td> 
+                    </tr>
+                    <tr>
+                        <td>이름</td>
+                        <td><input type="text"></td> 
+                    </tr>
+                    <tr>
+                        <td>성별</td>
+                        <td>남<input type="radio" name="gender">여<input type="radio" name="gender"></td> 
+                    </tr>
+                    <tr>
+                        <td>취미</td>
+                        <td>운동<input type="checkbox">피아노<input type="checkbox">낚시<input type="checkbox"></td> 
+                    </tr>
+                    <tr>
+                        <td>전화번호</td>
+                        <td><select name="통신사" >
+                            <option value="SKT">SKT</option>
+                            <option value="LGU">LGT</option>
+                            <option value="KT">KT</option>
+                            <option value="알뜰폰">알뜰폰</option>
+                        </select>
+                        <input type="number" placeholder="-없이 숫자로만">
+                    </td> 
+                    </tr>
+                    <tr>
+                        <td>생년월일</td>
+                        <td><input type="date">
+                    </tr>
+                    <tr>
+                        <td>가입날짜</td>
+                        <td><input type="datetime">
+                    </tr>
+                    <tr>
+                        <td>하고싶은 말</td>
+                        <td><textarea cols="30" rows="10" placeholder="100글자 이내"></textarea></td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2" align="center"><button>가입신청</button></td>
+                    </tr>
+                </table>
+                </form>
+        </div>
+    </div>
+</body>
+</html>

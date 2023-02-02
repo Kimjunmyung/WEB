@@ -1,0 +1,12 @@
+body {
+    background: rosybrown;
+}
+
+a {
+    color: white;
+    width: 110px;
+    height:30px;
+    background: green;
+    text-decoration-line: none;
+    display: inline-block;
+}

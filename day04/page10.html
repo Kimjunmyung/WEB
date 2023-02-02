@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+           function login() {
+            id = "root"
+            pw = "1234"
+            id1 = document.getElementById('id1').value //"root"
+            pw1 = document.getElementById('pw1').value //"1234"
+            pw2 = document.getElementById('pw2').value //"1234"
+           
+            result = document.getElementById('result')
+            if (id == id1 && pw1 == pw2) {
+                div_tag = document.getElementById('result') 
+                result.innerHTML = "<font color=green>로그인 성공!!!</font>"
+            } else {
+                div_tag = document.getElementById('result')
+                result.innerHTML = "<font color=red>로그인 실패!!!</font>"
+            }
+        }
+        
+        function id_count() {
+        id1_value = document.getElementById('id1').value 
+        size = id1_value.length
+        alert(size)
+
+        if (size < 5) {
+            div_tag = document.getElementById('result')
+            div_tag.innerHTML = "<font color=red>5글자미만이므로 가입불가</font>"
+        }else{
+            div_tag.innerHTML = "<font color=blue>5글자이상이므로 가입가능</font>"
+        }
+      }
+
+        function pw_check(){
+            pw1 = document.getElementById('pw1').value //"1234"
+            pw2 = document.getElementById('pw2').value //"1234"
+            if(pw1 == pw2){
+                result.innerHTML = "<font color=green>비밀번호가 일치합니다.</font>"
+            } else {
+                result.innerHTML = "<font color=red>비밀번호가 일치하지 않습니다.</font>"
+            }
+        }
+    </script>
+</head>
+<body>
+    <hr color="red">
+    아이디:<input type="text" id = "id1" value="root">  <button onclick="id_count()">글자수확인</button> <br>
+    패스워드:<input type="text" id = "pw1" value="1234">  <br>
+    패스워드 확인:<input type="text" id = "pw2" value="1234"> <button onclick="pw_check()">비밀번호 확인</button><br>
+    <button onclick="login()">로그인</button>
+    <div id = "result">
+        결과 들어갈 곳
+    </div>
+</body>
+</html>

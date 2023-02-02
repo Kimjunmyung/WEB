@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈페이지</title>
+    <style>
+        body{
+            background-color: azure;
+        }
+        li{
+            font-size: 17px;
+            list-style: none; /*리스트 스타일 없애는*/
+            float: left; /*왼쪽부터 정렬하기*/
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+       
+        #center{
+            background-color: bisque;
+            padding:50px;
+            width: 800px;
+            height:300px;
+        }
+       
+        li:nth-child(2n){
+            background-color: aquamarine;
+        }
+        
+        li:nth-child(2n+1){
+            background-color:darksalmon
+        }
+        
+        a{
+            text-decoration: none;
+        }
+
+        a:hover{
+            background-color: blue;
+        }
+       
+    
+        #top{
+           
+            width: 800px;
+            height:100px;
+            background-color: cadetblue;
+            padding: 3px;
+        }
+        #top2{
+            font-size: 20px;
+            width: 190px;
+            height: 100px;
+            background-color: blueviolet;
+            padding: 5px;
+            position: fixed;
+            top: 5px;
+            right: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="total">
+        <div id="top">
+            <ul>
+                <li>
+                     <a href="">회원가입</a>
+                </li>
+        
+                <li>
+                     <a href="">제품정보</a>
+                </li>
+        
+                <li>
+                    <a href="page30.html">게시판</a>
+                </li>
+        
+                <li>
+                     <a href="">장바구니</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="top2">
+            고정된 화면 보이는 부분
+        </div>
+
+        <div id="center">
+            <table border="1">
+                <tr>
+                    <td> 1</td>
+                   
+                    <td>운동화</td>
+                   
+                    <td>뉴발란스 </td>
+                   
+                    <td>1000원</td>
+                   
+                    <td>
+                        <img src="1.png" alt="" width="100" height="100">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td> 1</td>
+                    
+                    <td>운동화</td>
+                   
+                    <td>뉴발란스</td>
+                    
+                    <td>1000원</td>
+                    
+                     <td>
+                        <img src="1.png" alt="" width="100" height="100">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
